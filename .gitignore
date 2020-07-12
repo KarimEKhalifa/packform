@@ -1,5 +1,22 @@
 database_migration/test_data
+database_migration/database_migration.ipynb
+database_migration/.ipynb_checkpoints
 
-packform-frontend/nodemodules
+packform-frontend/node_modules
 
+
+restapi/*.exe
+restapi/*.exe~
+restapi/*.dll
+restapi/*.dylib
+restapi/*.so
+restapi/*.dylib
+
+*.test
+
+*.out
+
+vendor/
+
+.gitignore
 .DS_Store

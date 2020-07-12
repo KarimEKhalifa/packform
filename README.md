@@ -11,6 +11,8 @@ This is a simple full-stack project using python to create an populate both sql 
 
 By default the used port for the frontend is 8080 and for the api is 8000, If you changed the api's port make sure to change it in the frontend as will be explained below.
 
+Python script follows a naming convension for csv files "foldername - databasetype - tablename.csv", Where databasetype is either Mongo or Postgres. Make sure the folder containg the csv files is in the same directory as the script.
+
 ## Steps to run this project:
 1) Make sure that both MongoDB and Postgres DB are running.
 2) Navigate into the database_migration folder and install the python dependencies using 
@@ -23,9 +25,15 @@ python3 database_migration.py
 ```
 then follow the prompts.
 
+### You can use the built go file located at restapi/, if you do you can skip steps 4 and 5
+
 4) Navigate to the Go restapi files located at restapi/src/github.com/karimkhalifa/restapi/ and install dependencies using
 ```
 go get ./...
+```
+Make sure that your $GOPATH is set to your $HOME using
+```
+export $GOPATH=$HOME
 ```
 5) Run the api server using
 ```
